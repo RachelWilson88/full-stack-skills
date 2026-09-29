@@ -2,7 +2,7 @@
 
 # Full Stack Skills
 
-**775 个 Agent Skills。50 个技能包。一个统一生态。**
+**777 个 Agent Skills。50 个技能包。一个统一生态。**
 
 *前端 · 后端 · 移动端 · DevOps · AI 设计工具 — 生产级品质，独立安装。*
 
@@ -30,14 +30,14 @@
 
 每个包提供专业知识、工作流和参考资料，AI 智能体按需加载 — 保持上下文占用最小化，同时在需要时提供深度领域专业知识。
 
-> **迁移完成（2026 年 6 月）**：当前 775 个技能均位于独立仓库。本仓库现在是目录和导航站。所有现有 stars 和历史记录均保留在此。
+> **迁移完成（2026 年 6 月）**：当前 777 个技能均位于独立仓库。本仓库现在是目录和导航站。所有现有 stars 和历史记录均保留在此。
 
 ### 我们要解决的问题
 
 | 缺口 | 问题 | 解决方案 |
 |------|------|----------|
 | **上下文溢出** | 一次加载所有技能会超过 token 限制 | 通过 `npx skills add` 按包按需加载 |
-| **领域专业知识** | 通用 AI 缺乏深度框架知识 | 跨 15 个领域的 775 个专业技能 |
+| **领域专业知识** | 通用 AI 缺乏深度框架知识 | 跨 15 个领域的 777 个专业技能 |
 | **可发现性** | 技能分散在各个仓库，难以查找 | 本目录 — 一个 README，所有包链接 |
 | **版本锁定** | monorepo 强制协调发布 | 每个包独立版本管理和发布 |
 
@@ -75,7 +75,7 @@ npx skills add full-stack-skills/vue-skills --skill vue3
 
 | 包 | 技能数 | 安装 |
 |---|--------|------|
-| [stitch-skills](https://github.com/full-stack-skills/stitch-skills) | 44 | `npx skills add full-stack-skills/stitch-skills` |
+| [stitch-skills](https://github.com/full-stack-skills/stitch-skills) | 45 | `npx skills add full-stack-skills/stitch-skills` |
 | [pencil-skills](https://github.com/full-stack-skills/pencil-skills) | 28 | `npx skills add full-stack-skills/pencil-skills` |
 | [t2ui-skills](https://github.com/full-stack-skills/t2ui-skills) | 97 | `npx skills add full-stack-skills/t2ui-skills` |
 
@@ -151,7 +151,7 @@ npx skills add full-stack-skills/vue-skills --skill vue3
 | 包 | 技能数 | 安装 |
 |---|--------|------|
 | [ddd-skills](https://github.com/full-stack-skills/ddd-skills) | 16 | `npx skills add full-stack-skills/ddd-skills` |
-| [design-skills](https://github.com/full-stack-skills/design-skills) | 15 | `npx skills add full-stack-skills/design-skills` |
+| [design-skills](https://github.com/full-stack-skills/design-skills) | 16 | `npx skills add full-stack-skills/design-skills` |
 | [drawio-skills](https://github.com/full-stack-skills/drawio-skills) | 2 | `npx skills add full-stack-skills/drawio-skills` |
 | [document-skills](https://github.com/full-stack-skills/document-skills) | 11 | `npx skills add full-stack-skills/document-skills` |
 | [processon-skills](https://github.com/full-stack-skills/processon-skills) | 7 | `npx skills add full-stack-skills/processon-skills` |
@@ -248,7 +248,7 @@ CodeReview 的五个增强技能不包含 [Alibaba OCR 官方两个技能](https
 | 测试 | 1 | 10 |
 | 规范驱动开发 | 2 | 28 |
 | 代码质量与治理 | 2 | 73 |
-| **总计** | **50** | **775** |
+| **总计** | **50** | **777** |
 
 > 💡 `boss-skills` 是混入的个人草稿（仅散落脚本，无 `skills/` 子目录），未计入正式技能包。
 
