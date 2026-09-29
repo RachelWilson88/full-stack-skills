@@ -2,7 +2,7 @@
 
 # Full Stack Skills
 
-**774 Agent Skills. 50 Skill Packages. One Ecosystem.**
+**775 Agent Skills. 50 Skill Packages. One Ecosystem.**
 
 *Frontend · Backend · Mobile · DevOps · AI Design Tools — production-ready, independently installable.*
 
@@ -30,14 +30,14 @@
 
 Each package provides specialized knowledge, workflows, and reference materials that AI agents load on-demand — keeping context footprint minimal while delivering deep domain expertise when needed.
 
-> **Migration Complete (June 2026)**: All 774 current skills live in individual repositories. This repo is now the catalog & navigation hub. All existing stars and history are preserved here.
+> **Migration Complete (June 2026)**: All 775 current skills live in individual repositories. This repo is now the catalog & navigation hub. All existing stars and history are preserved here.
 
 ### Problems We Solve
 
 | Gap | Problem | Solution |
 |-----|---------|----------|
 | **Context overflow** | Loading all skills at once exceeds token limits | Per-package on-demand loading via `npx skills add` |
-| **Domain expertise** | Generic AI lacks deep framework knowledge | 774 specialized skills across 15 domains |
+| **Domain expertise** | Generic AI lacks deep framework knowledge | 775 specialized skills across 15 domains |
 | **Discoverability** | Skills scattered across repos, hard to find | This catalog — one README, all packages linked |
 | **Version lock** | Monorepo forces coordinated releases | Each package independently versioned and published |
 
@@ -75,7 +75,7 @@ npx skills add full-stack-skills/vue-skills --skill vue3
 
 | Package | Skills | Install |
 |---------|--------|---------|
-| [stitch-skills](https://github.com/full-stack-skills/stitch-skills) | 43 | `npx skills add full-stack-skills/stitch-skills` |
+| [stitch-skills](https://github.com/full-stack-skills/stitch-skills) | 44 | `npx skills add full-stack-skills/stitch-skills` |
 | [pencil-skills](https://github.com/full-stack-skills/pencil-skills) | 28 | `npx skills add full-stack-skills/pencil-skills` |
 | [t2ui-skills](https://github.com/full-stack-skills/t2ui-skills) | 97 | `npx skills add full-stack-skills/t2ui-skills` |
 
@@ -247,7 +247,7 @@ This keeps context footprint minimal while providing deep expertise when require
 | Testing | 1 | 10 |
 | Spec-Driven Dev | 2 | 28 |
 | Code Quality & Governance | 2 | 73 |
-| **Total** | **50** | **774** |
+| **Total** | **50** | **775** |
 
 > 💡 `boss-skills` is an old mixed-in personal scratch directory (no `skills/` subfolder, just loose scripts). It is **not** counted as a skill package.
 
