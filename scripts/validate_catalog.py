@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import json
 import re
 import sys
 from pathlib import Path
@@ -57,6 +58,29 @@ def validate_readme(path: Path, expected: set[str]) -> int:
         fail(f"{path.name}: declares {declared_skills} skills, table sums to {sum(counts)}")
         errors += 1
 
+    snapshot = json.loads((ROOT / "docs/catalog-inventory.json").read_text(encoding="utf-8"))
+    recorded = {row["repository"].split("/")[1]: row["skills"] for row in snapshot["packages"]}
+    documented = {repository: int(count) for label, repository, count in rows if label == repository}
+    if recorded != documented:
+        fail(f"{path.name}: package counts differ from the source snapshot")
+        errors += 1
+
+    # 分类小计及汇总表必须与该分类实际收录的包一致，社区推荐不参与求和。
+    for heading, body in re.findall(r"^### (.+)\n([\s\S]*?)(?=^### |^## |\Z)", text, re.MULTILINE):
+        subtotal = re.search(r"[（(]([0-9]+) (?:个技能|skills)[）)]", heading)
+        package_rows = [(label, int(count)) for label, repository, count in REPOSITORY_RE.findall(body) if label == repository]
+        if not subtotal or not package_rows:
+            continue
+        actual = sum(count for _, count in package_rows)
+        if int(subtotal.group(1)) != actual:
+            fail(f"{path.name}: category {heading} sums to {actual}")
+            errors += 1
+        label = heading[:subtotal.start()].strip()
+        summary = f"| {label} | {len(package_rows)} | {actual} |"
+        if summary not in text:
+            fail(f"{path.name}: category summary missing or inconsistent: {label}")
+            errors += 1
+
     print(f"{path.name}: {len(repositories)} packages, {sum(counts)} skills")
     return errors
 
@@ -68,6 +92,22 @@ def main() -> int:
         return 1
     expected = set(inventory)
     errors = sum(validate_readme(ROOT / name, expected) for name in ("README.md", "README.en.md"))
+    index = (ROOT / "SKILLS_INDEX.md").read_text(encoding="utf-8")
+    index_rows = re.findall(r"^## ([^\s]+)（([0-9]+) 个技能）\n\n([^\n]+)", index, re.MULTILINE)
+    indexed = {package: int(count) for package, count, _ in index_rows}
+    snapshot = json.loads((ROOT / "docs/catalog-inventory.json").read_text(encoding="utf-8"))
+    recorded = {row["repository"].split("/")[1]: row["skills"] for row in snapshot["packages"]}
+    if len(recorded) != len(snapshot["packages"]) or set(recorded) != expected or indexed != recorded:
+        fail("index, source snapshot and repository inventory differ")
+        errors += 1
+    for package, count, names in index_rows:
+        if len(re.findall(r"`[^`]+`", names)) != int(count):
+            fail(f"index: {package} skill names do not match its count")
+            errors += 1
+    for row in snapshot["packages"]:
+        if not re.fullmatch(r"[0-9a-f]{40}", row["commit"]):
+            fail(f"snapshot: invalid commit for {row['repository']}")
+            errors += 1
     return 1 if errors else 0
 
 

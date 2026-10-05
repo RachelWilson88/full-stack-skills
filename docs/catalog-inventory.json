@@ -1,0 +1,317 @@
+{
+  "checked_at": "2026-10-06",
+  "scope": "Listed packages only; skills/*/SKILL.md on GitHub main; count entries, not unique names.",
+  "excluded_packages": [
+    "skills-toolchain",
+    "social-skills",
+    "teaching-skills"
+  ],
+  "packages": [
+    {
+      "repository": "full-stack-skills/1panel-skills",
+      "ref": "main",
+      "commit": "b009fa51c35b41c16464163c49916fe9bcd21caf",
+      "skills": 8
+    },
+    {
+      "repository": "full-stack-skills/agent-skills",
+      "ref": "main",
+      "commit": "8e96b838746546aed3c77061e3e5ae7c15a83871",
+      "skills": 16
+    },
+    {
+      "repository": "full-stack-skills/angular-skills",
+      "ref": "main",
+      "commit": "8b8e6b2254960a1086b096e96627b80b5c5de43b",
+      "skills": 1
+    },
+    {
+      "repository": "full-stack-skills/antd-skills",
+      "ref": "main",
+      "commit": "ec8b208f54d10443ce1196ab05dbdabd926923fe",
+      "skills": 4
+    },
+    {
+      "repository": "full-stack-skills/ascii-skills",
+      "ref": "main",
+      "commit": "360553d8c3dac3c67dd6aceed6ad118fcfd9531f",
+      "skills": 13
+    },
+    {
+      "repository": "full-stack-skills/avue-skills",
+      "ref": "main",
+      "commit": "2ce8672a6838caddc3172b8186fef55f88a75b19",
+      "skills": 3
+    },
+    {
+      "repository": "full-stack-skills/bt-linux-panel-skills",
+      "ref": "main",
+      "commit": "01a7b2751f999646145bd350ec40c0f123f1fe1c",
+      "skills": 6
+    },
+    {
+      "repository": "full-stack-skills/build-skills",
+      "ref": "main",
+      "commit": "950847425667a33b9e59c75c3123dadf6b10dc17",
+      "skills": 7
+    },
+    {
+      "repository": "full-stack-skills/chart-skills",
+      "ref": "main",
+      "commit": "af1db40fe3980dadc9d8ed32db7ea5d3d87f9c51",
+      "skills": 2
+    },
+    {
+      "repository": "full-stack-skills/cocos-skills",
+      "ref": "main",
+      "commit": "676ae8be95263ed5a9d464b97dab03d86d01e8ff",
+      "skills": 1
+    },
+    {
+      "repository": "full-stack-skills/codeguard-skills",
+      "ref": "main",
+      "commit": "9a6b37eb8791fdff7c6f5c3ad5f7c1d853c0c2f9",
+      "skills": 68
+    },
+    {
+      "repository": "full-stack-skills/codereview-skills",
+      "ref": "main",
+      "commit": "0cfd2e18ed10eeaf5042bce0589c765bfccd2803",
+      "skills": 5
+    },
+    {
+      "repository": "full-stack-skills/database-skills",
+      "ref": "main",
+      "commit": "a5b453bf227affb0541067e1c14574c42a50dbe8",
+      "skills": 5
+    },
+    {
+      "repository": "full-stack-skills/ddd-skills",
+      "ref": "main",
+      "commit": "04596b5786e89ec70a019e795908fe1bdb3ad457",
+      "skills": 16
+    },
+    {
+      "repository": "full-stack-skills/ddd4j-skills",
+      "ref": "main",
+      "commit": "7e085f9735ae9129c96c3b7df52b7e9fd74f2554",
+      "skills": 62
+    },
+    {
+      "repository": "full-stack-skills/design-skills",
+      "ref": "main",
+      "commit": "13d8e347002d4be3bb6a5b6415df64fc0a4d52db",
+      "skills": 18
+    },
+    {
+      "repository": "full-stack-skills/devops-skills",
+      "ref": "main",
+      "commit": "d84e21931c485fe3b310178bbec297947f236743",
+      "skills": 10
+    },
+    {
+      "repository": "full-stack-skills/docker-skills",
+      "ref": "main",
+      "commit": "b2886b9252245faafa6a0e911b38ca33ea4a25ee",
+      "skills": 16
+    },
+    {
+      "repository": "full-stack-skills/document-skills",
+      "ref": "main",
+      "commit": "f0e1ec2006c10ea0b2024f82102603084bd38362",
+      "skills": 11
+    },
+    {
+      "repository": "full-stack-skills/drawio-skills",
+      "ref": "main",
+      "commit": "e57f2ed84dabb05fd93962f5d8fd2a04add2ebed",
+      "skills": 2
+    },
+    {
+      "repository": "full-stack-skills/electron-skills",
+      "ref": "main",
+      "commit": "bc724a96446c88f0a46a58a48b9e0d2c7a4884b0",
+      "skills": 3
+    },
+    {
+      "repository": "full-stack-skills/firmware-skills",
+      "ref": "main",
+      "commit": "9f6dc30b5d86647b80fb0d0b2ba9f44cfde49dfd",
+      "skills": 20
+    },
+    {
+      "repository": "full-stack-skills/flutter-skills",
+      "ref": "main",
+      "commit": "9c5145850539aaf60abd56e62941226430b4702b",
+      "skills": 2
+    },
+    {
+      "repository": "full-stack-skills/go-skills",
+      "ref": "main",
+      "commit": "05e691fbd9e92639796ecfb2f4a8e41f806b6936",
+      "skills": 2
+    },
+    {
+      "repository": "full-stack-skills/java-skills",
+      "ref": "main",
+      "commit": "d981268c4baaa32e4e068a47b95db13e5a1c526e",
+      "skills": 39
+    },
+    {
+      "repository": "full-stack-skills/kotlin-skills",
+      "ref": "main",
+      "commit": "e4ea953143b69f718226d67ffe30460e36e93353",
+      "skills": 7
+    },
+    {
+      "repository": "full-stack-skills/mobile-native-skills",
+      "ref": "main",
+      "commit": "b0ffa0c5b3a7c5d01daaa29a3e737a4ed4b9309a",
+      "skills": 2
+    },
+    {
+      "repository": "full-stack-skills/nodejs-skills",
+      "ref": "main",
+      "commit": "7124d2c36b96a3a730754bba5f02dc6619125ae6",
+      "skills": 4
+    },
+    {
+      "repository": "full-stack-skills/nvm-skills",
+      "ref": "main",
+      "commit": "81af68f6290cde2c535d05288e96f8cac2cc2740",
+      "skills": 15
+    },
+    {
+      "repository": "full-stack-skills/ocrmypdf-skills",
+      "ref": "main",
+      "commit": "68ac3e2c78360aeb0cd1ff31bfd32b24a0cd91da",
+      "skills": 5
+    },
+    {
+      "repository": "full-stack-skills/openspec-skills",
+      "ref": "main",
+      "commit": "6099a8ef638585ed2bceac462d254fac1d28d1eb",
+      "skills": 15
+    },
+    {
+      "repository": "full-stack-skills/pencil-skills",
+      "ref": "main",
+      "commit": "bcd882c3819b913d80f870aa0d24ed08f173b69c",
+      "skills": 28
+    },
+    {
+      "repository": "full-stack-skills/processon-skills",
+      "ref": "main",
+      "commit": "ce36c8e812df5a8f5d729c6c88e60eed87363f9d",
+      "skills": 7
+    },
+    {
+      "repository": "full-stack-skills/python-skills",
+      "ref": "main",
+      "commit": "9f82ef5b3340a85fd93c3c5d90d798b5a0985f98",
+      "skills": 19
+    },
+    {
+      "repository": "full-stack-skills/react-skills",
+      "ref": "main",
+      "commit": "b5269ff2778f0a5a26780ebbfe6ec68e8d8ed06a",
+      "skills": 7
+    },
+    {
+      "repository": "full-stack-skills/rust-skills",
+      "ref": "main",
+      "commit": "b8a6af74af28ee86b8cbbbc3075cde0b31a5155e",
+      "skills": 29
+    },
+    {
+      "repository": "full-stack-skills/speckit-skills",
+      "ref": "main",
+      "commit": "e298e46c3c3250dfb747927197376c53b76c65a9",
+      "skills": 13
+    },
+    {
+      "repository": "full-stack-skills/spring-skills",
+      "ref": "main",
+      "commit": "4085c2a21e0dc6118be98044edefe72fbc84197b",
+      "skills": 7
+    },
+    {
+      "repository": "full-stack-skills/stitch-skills",
+      "ref": "main",
+      "commit": "d100989982298e9bffd75ae615b04f36aa8dec7d",
+      "skills": 45
+    },
+    {
+      "repository": "full-stack-skills/svelte-skills",
+      "ref": "main",
+      "commit": "d49b744629e90852bca5f94e9f71cdef3f72030d",
+      "skills": 16
+    },
+    {
+      "repository": "full-stack-skills/swift-skills",
+      "ref": "main",
+      "commit": "eee7666bf45d81d51f8a0f1b7133d1e54dd1b2b4",
+      "skills": 7
+    },
+    {
+      "repository": "full-stack-skills/t2ui-skills",
+      "ref": "main",
+      "commit": "78ddc48d807e92cac8bff502062cd305c394c095",
+      "skills": 97
+    },
+    {
+      "repository": "full-stack-skills/tauri-skills",
+      "ref": "main",
+      "commit": "77b57c4913873a0f8cab7db45116038dc18a27f0",
+      "skills": 52
+    },
+    {
+      "repository": "full-stack-skills/testing-skills",
+      "ref": "main",
+      "commit": "750bc6389feed8c6133441e3d89136b25e1f802f",
+      "skills": 10
+    },
+    {
+      "repository": "full-stack-skills/threejs-skills",
+      "ref": "main",
+      "commit": "92789c1eda17bbfade4a4274903038dcfe6cbff0",
+      "skills": 18
+    },
+    {
+      "repository": "full-stack-skills/uniapp-skills",
+      "ref": "main",
+      "commit": "5f410b840dc0eafa0c40cbff2e0825ab42070f3b",
+      "skills": 13
+    },
+    {
+      "repository": "full-stack-skills/uview-skills",
+      "ref": "main",
+      "commit": "912182ddb6154449551c09449f66fa02c2ece30b",
+      "skills": 2
+    },
+    {
+      "repository": "full-stack-skills/vscode-skills",
+      "ref": "main",
+      "commit": "967e5448e176f98aba9ee47a66cc1f231495066e",
+      "skills": 4
+    },
+    {
+      "repository": "full-stack-skills/vue-skills",
+      "ref": "main",
+      "commit": "7f2323435e967df2fc85f9843946367d3aa832b0",
+      "skills": 7
+    },
+    {
+      "repository": "full-stack-skills/vue-ui-skills",
+      "ref": "main",
+      "commit": "6b1f088d00ddad5f75cdbbd26f4525f033d2d792",
+      "skills": 4
+    },
+    {
+      "repository": "full-stack-skills/zig-skills",
+      "ref": "main",
+      "commit": "d0d7affe825d7ed4720ce7998e81d0610d07f651",
+      "skills": 15
+    }
+  ]
+}

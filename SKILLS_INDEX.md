@@ -1,13 +1,18 @@
 # Skills Index
 
-> 本索引按包汇总目录收录的 **774** 个技能名，对账日期 2026-09-24。
-> 技能实体位于 [full-stack-skills](https://github.com/full-stack-skills) 组织下的独立包仓库，本仓库只做目录导航。
-> 目录收录 50 个包；`skills-toolchain`、`teaching-skills`、`social-skills` 按 2026-09-24 决策不计入目录、不在本索引中。
-> 用 `Ctrl/Cmd-F` 搜索技能名即可定位所在技能包；安装命令见各包段落或 [README.md](README.md)。
+> 按 2026-10-06 各包 GitHub `main` 汇总：**51 个包 / 788 个技能条目**。来源版本见 [catalog-inventory.json](docs/catalog-inventory.json)。
+> 社区推荐及 `skills-toolchain`、`teaching-skills`、`social-skills` 不计入；同名技能按所属包分别计数。
+> 用 Ctrl/Cmd-F 搜索技能名；安装前可追加 `--list` 查看包内技能。
 
-## agent-skills（15 个技能）
+## 1panel-skills（8 个技能）
 
-`agent-browser` `autoresearch` `browser-trace` `caveman` `code-generator` `codebase-design` `codegraph` `mcp-builder` `skill-awesome` `skill-creator` `skill-installer` `skill-official-evaluation` `skill-sop-creator` `skill-trace-checker` `skill-trace-evaluation`
+`1panel-apps` `1panel-certificates` `1panel-databases` `1panel-security-audit` `1panel-setup` `1panel-system` `1panel-use` `1panel-websites`
+
+安装：`npx skills add full-stack-skills/1panel-skills`
+
+## agent-skills（16 个技能）
+
+`agent-browser` `agent-plugins-skill` `autoresearch` `browser-trace` `caveman` `code-generator` `codebase-design` `codegraph` `mcp-builder` `skill-awesome` `skill-creator` `skill-installer` `skill-official-evaluation` `skill-sop-creator` `skill-trace-checker` `skill-trace-evaluation`
 
 安装：`npx skills add full-stack-skills/agent-skills`
 
@@ -89,9 +94,9 @@
 
 安装：`npx skills add full-stack-skills/ddd4j-skills`
 
-## design-skills（15 个技能）
+## design-skills（18 个技能）
 
-`adobe-xd` `algorithmic-art` `better-icons` `brand-guidelines` `canvas-design` `cross-platform-mvp-ui-alignment` `design-guard` `design-harness` `feature-design` `huashu-design` `navigation-design` `product-design` `remotion` `theme-factory` `ui-continuity`
+`adobe-xd` `algorithmic-art` `better-icons` `brand-guidelines` `canvas-design` `cross-platform-mvp-ui-alignment` `remotion` `ui-design-continuity` `ui-design-feature` `ui-design-harness` `ui-design-nav` `ui-design-preview` `ui-design-review` `ui-design-spec` `ui-design-theme` `ui-design-to-image` `ui-design-use` `ui-design-visual`
 
 安装：`npx skills add full-stack-skills/design-skills`
 
@@ -227,9 +232,9 @@
 
 安装：`npx skills add full-stack-skills/spring-skills`
 
-## stitch-skills（43 个技能）
+## stitch-skills（45 个技能）
 
-`stitch-code-to-design` `stitch-delete-project` `stitch-delivery-harness` `stitch-design-md` `stitch-design-use` `stitch-extract-design-md` `stitch-extract-static-html` `stitch-local-setup` `stitch-loop` `stitch-manage-design-system` `stitch-mcp-create-project` `stitch-mcp-generate-screen-from-text` `stitch-mcp-get-project` `stitch-mcp-get-screen` `stitch-mcp-list-projects` `stitch-mcp-list-screens` `stitch-react-components` `stitch-react-native` `stitch-react-vite-dashboard` `stitch-remotion` `stitch-shadcn-ui` `stitch-site-md` `stitch-skill-creator` `stitch-taste-design` `stitch-ued-guide` `stitch-ui-design-spec-bootstrap` `stitch-ui-design-spec-element-plus` `stitch-ui-design-spec-generator` `stitch-ui-design-spec-layui` `stitch-ui-design-spec-uview` `stitch-ui-design-spec-uviewpro` `stitch-ui-design-spec-vant` `stitch-ui-design-variants` `stitch-ui-designer` `stitch-ui-prompt-architect` `stitch-upload-to-stitch` `stitch-uview-components` `stitch-uview-plus-components` `stitch-uviewpro-components` `stitch-vue-bootstrap-components` `stitch-vue-element-components` `stitch-vue-layui-components` `stitch-vue-vant-components`
+`stitch-code-to-design` `stitch-delete-project` `stitch-design-harness` `stitch-design-md` `stitch-design-spec` `stitch-design-use` `stitch-extract-design-md` `stitch-extract-static-html` `stitch-local-setup` `stitch-manage-design-system` `stitch-mcp-create-project` `stitch-mcp-generate-screen-from-text` `stitch-mcp-get-project` `stitch-mcp-get-screen` `stitch-mcp-list-projects` `stitch-mcp-list-screens` `stitch-remotion` `stitch-scenario-skill-creator` `stitch-site-md` `stitch-ui-contract-bootstrap` `stitch-ui-contract-element-plus` `stitch-ui-contract-layui` `stitch-ui-contract-uview2` `stitch-ui-contract-uviewpro` `stitch-ui-contract-vant` `stitch-ui-design-spec-generator` `stitch-ui-execute` `stitch-ui-guide` `stitch-ui-loop` `stitch-ui-preview` `stitch-ui-prompt-architect` `stitch-ui-react-components` `stitch-ui-react-native-components` `stitch-ui-react-vite-dashboard` `stitch-ui-shadcn-components` `stitch-ui-style` `stitch-ui-uview-plus-components` `stitch-ui-uview2-components` `stitch-ui-uviewpro-components` `stitch-ui-variants` `stitch-ui-vue-bootstrap-components` `stitch-ui-vue-element-plus-components` `stitch-ui-vue-layui-components` `stitch-ui-vue-vant-components` `stitch-upload`
 
 安装：`npx skills add full-stack-skills/stitch-skills`
 
@@ -304,7 +309,3 @@
 `zig-0-15` `zig-0-16` `zig-build-system` `zig-code-review` `zig-concurrency` `zig-crypto` `zig-http` `zig-java-migration` `zig-java-migration-testing` `zig-json` `zig-project-structure` `zig-raylib` `zig-sdl3-bindings` `zig-testing` `zig-tiger-style`
 
 安装：`npx skills add full-stack-skills/zig-skills`
-
----
-
-_共 50 个技能包、774 个技能（不含 3 个不计入目录的包）。_

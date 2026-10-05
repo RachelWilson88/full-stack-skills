@@ -2,7 +2,7 @@
 
 # Full Stack Skills
 
-**777 Agent Skills. 50 Skill Packages. One Ecosystem.**
+**788 Agent Skills. 51 Skill Packages. One Ecosystem.**
 
 *Frontend · Backend · Mobile · DevOps · AI Design Tools — production-ready, independently installable.*
 
@@ -12,38 +12,71 @@
 
 [简体中文](./README.md)
 
-[Introduction](#-introduction) ·
-[Install](#-install) ·
-[Skill Catalog](#-skill-catalog) ·
-[Architecture](#-architecture) ·
-[For Claude Code](#-for-claude-code-users) ·
-[Ecosystem](#-ecosystem) ·
-[Contributing](#-contributing)
+[Introduction](#introduction) ·
+[Install](#install) ·
+[Skill Catalog](#skill-catalog) ·
+[Architecture](#architecture) ·
+[For Claude Code](#for-claude-code-users) ·
+[Ecosystem](#ecosystem) ·
+[Contributing](#contributing)
 
 </div>
+
+<!-- ecosystem-navigation:start -->
+
+## Ecosystem navigation
+
+Choose the entry that matches your task: skills provide reusable guidance; plugins connect tools and workflows. Install only what you need.
+
+| Area | Use it for | Catalog / installation | Organization |
+| --- | --- | --- | --- |
+| Full Stack Skills | Software development, architecture, testing, and operations | [PartMe.AI / full-stack-skills](https://github.com/partme-ai/full-stack-skills) | [full-stack-skills](https://github.com/full-stack-skills) |
+| Full AIGC Skills | Image, video, audio, and other content creation | [PartMe.AI / full-aigc-skills](https://github.com/partme-ai/full-aigc-skills) | [full-aigc-skills](https://github.com/full-aigc-skills) |
+| Full Stack Plugins | Tools and workflows for development and operations | [PartMe.AI / full-stack-plugins](https://github.com/partme-ai/full-stack-plugins) | [full-stack-plugins](https://github.com/full-stack-plugins) |
+| Full AIGC Plugins | Tools and workflows for content production | [PartMe.AI / full-aigc-plugins](https://github.com/partme-ai/full-aigc-plugins) | [full-aigc-plugins](https://github.com/full-aigc-plugins) |
+
+<!-- ecosystem-navigation:end -->
+
 
 ---
 
 ## Introduction
 
-**Full Stack Skills** is the navigation hub for the most comprehensive collection of Agent Skills for AI coding agents. Originally a monorepo with 460+ stars, we've split into **50 independently installable packages** under the [full-stack-skills](https://github.com/full-stack-skills) GitHub organization.
+> Counted on 2026-10-06 from `skills/*/SKILL.md` on each listed package’s GitHub `main`: 51 packages, 788 skill entries (not deduplicated by name). Community recommendations are excluded. `skills-toolchain`, `teaching-skills`, and `social-skills` remain outside this catalog. See [source snapshot](docs/catalog-inventory.json) and [skill index](SKILLS_INDEX.md).
+
+**Full Stack Skills** is the navigation hub for the most comprehensive collection of Agent Skills for AI coding agents. Originally a monorepo with 460+ stars, we've split into **51 independently installable packages** under the [full-stack-skills](https://github.com/full-stack-skills) GitHub organization.
 
 Each package provides specialized knowledge, workflows, and reference materials that AI agents load on-demand — keeping context footprint minimal while delivering deep domain expertise when needed.
 
-> **Migration Complete (June 2026)**: All 777 current skills live in individual repositories. This repo is now the catalog & navigation hub. All existing stars and history are preserved here.
+> **Migration Complete (June 2026)**: All 788 current skills live in individual repositories. This repo is now the catalog & navigation hub. All existing stars and history are preserved here.
 
 ### Problems We Solve
 
 | Gap | Problem | Solution |
 |-----|---------|----------|
 | **Context overflow** | Loading all skills at once exceeds token limits | Per-package on-demand loading via `npx skills add` |
-| **Domain expertise** | Generic AI lacks deep framework knowledge | 777 specialized skills across 15 domains |
+| **Domain expertise** | Generic AI lacks deep framework knowledge | 788 specialized skills across 15 domains |
 | **Discoverability** | Skills scattered across repos, hard to find | This catalog — one README, all packages linked |
 | **Version lock** | Monorepo forces coordinated releases | Each package independently versioned and published |
 
 ---
 
 ## Install
+
+Before installing, open a terminal in your project and make sure Node.js / npm are available. This repository is a catalog; install from a package repository, as shown below. The CLI lets you choose skills and hosts interactively.
+
+```bash
+# Preview available skills without installing
+npx skills add full-stack-skills/vue-skills --list
+
+# Install one skill for Codex in the current project
+npx skills add full-stack-skills/vue-skills --skill vue3 --agent codex
+
+# Add --global for user-wide installation; omit it for project scope
+# npx skills add full-stack-skills/vue-skills --skill vue3 --agent codex --global
+```
+
+After installation, use `npx skills list` to inspect installed skills. See [Quickstart](QUICKSTART.md), [host compatibility](PLATFORM_GUIDE.md), and the [Skills CLI documentation](https://github.com/vercel-labs/skills) for more details.
 
 Install any skill package with one command:
 
@@ -71,7 +104,7 @@ npx skills add full-stack-skills/vue-skills --skill vue3
 |---------|:------:|:------:|---------|
 | [baoyu-skills](https://github.com/JimLiu/baoyu-skills) | 21.4k | 21 | `npx skills add JimLiu/baoyu-skills` |
 
-### AI Design Tools — MCP (168 skills)
+### AI Design Tools — MCP (170 skills)
 
 | Package | Skills | Install |
 |---------|--------|---------|
@@ -79,7 +112,7 @@ npx skills add full-stack-skills/vue-skills --skill vue3
 | [pencil-skills](https://github.com/full-stack-skills/pencil-skills) | 28 | `npx skills add full-stack-skills/pencil-skills` |
 | [t2ui-skills](https://github.com/full-stack-skills/t2ui-skills) | 97 | `npx skills add full-stack-skills/t2ui-skills` |
 
-### Frontend Frameworks (66 skills)
+### Frontend Frameworks (67 skills)
 
 | Package | Skills | Install |
 |---------|--------|---------|
@@ -89,7 +122,7 @@ npx skills add full-stack-skills/vue-skills --skill vue3
 | [svelte-skills](https://github.com/full-stack-skills/svelte-skills) | 16 | `npx skills add full-stack-skills/svelte-skills` |
 | [uniapp-skills](https://github.com/full-stack-skills/uniapp-skills) | 13 | `npx skills add full-stack-skills/uniapp-skills` |
 | [swift-skills](https://github.com/full-stack-skills/swift-skills) | 7 | `npx skills add full-stack-skills/swift-skills` |
-| [agent-skills](https://github.com/full-stack-skills/agent-skills) | 15 | `npx skills add full-stack-skills/agent-skills` |
+| [agent-skills](https://github.com/full-stack-skills/agent-skills) | 16 | `npx skills add full-stack-skills/agent-skills` |
 
 ### Frontend UI Libraries (13 skills)
 
@@ -145,12 +178,12 @@ npx skills add full-stack-skills/vue-skills --skill vue3
 | [threejs-skills](https://github.com/full-stack-skills/threejs-skills) | 18 | `npx skills add full-stack-skills/threejs-skills` |
 | [cocos-skills](https://github.com/full-stack-skills/cocos-skills) | 1 | `npx skills add full-stack-skills/cocos-skills` |
 
-### Architecture & Design Patterns (56 skills)
+### Architecture & Design Patterns (59 skills)
 
 | Package | Skills | Install |
 |---------|--------|---------|
 | [ddd-skills](https://github.com/full-stack-skills/ddd-skills) | 16 | `npx skills add full-stack-skills/ddd-skills` |
-| [design-skills](https://github.com/full-stack-skills/design-skills) | 16 | `npx skills add full-stack-skills/design-skills` |
+| [design-skills](https://github.com/full-stack-skills/design-skills) | 18 | `npx skills add full-stack-skills/design-skills` |
 | [drawio-skills](https://github.com/full-stack-skills/drawio-skills) | 2 | `npx skills add full-stack-skills/drawio-skills` |
 | [document-skills](https://github.com/full-stack-skills/document-skills) | 11 | `npx skills add full-stack-skills/document-skills` |
 | [processon-skills](https://github.com/full-stack-skills/processon-skills) | 7 | `npx skills add full-stack-skills/processon-skills` |
@@ -168,13 +201,14 @@ npx skills add full-stack-skills/vue-skills --skill vue3
 |---------|--------|---------|
 | [database-skills](https://github.com/full-stack-skills/database-skills) | 5 | `npx skills add full-stack-skills/database-skills` |
 
-### DevOps & Containers (32 skills)
+### DevOps & Containers (40 skills)
 
 | Package | Skills | Install |
 |---------|--------|---------|
 | [devops-skills](https://github.com/full-stack-skills/devops-skills) | 10 | `npx skills add full-stack-skills/devops-skills` |
 | [docker-skills](https://github.com/full-stack-skills/docker-skills) | 16 | `npx skills add full-stack-skills/docker-skills` |
 | [bt-linux-panel-skills](https://github.com/full-stack-skills/bt-linux-panel-skills) | 6 | `npx skills add full-stack-skills/bt-linux-panel-skills` |
+| [1panel-skills](https://github.com/full-stack-skills/1panel-skills) | 8 | `npx skills add full-stack-skills/1panel-skills` |
 
 ### Testing (10 skills)
 
@@ -211,6 +245,7 @@ Each skill follows the [Agent Skills Specification](https://agentskills.io):
 ├── skills/
 │   ├── <skill-name>/
 │   │   ├── SKILL.md          # Required — loaded on-demand by AI agents
+│   │   ├── agents/openai.yaml # Codex 展示配置 / Codex UI metadata
 │   │   ├── examples/         # Optional — usage examples
 │   │   ├── references/       # Optional — detailed reference docs
 │   │   └── scripts/          # Optional — executable scripts
@@ -232,22 +267,22 @@ This keeps context footprint minimal while providing deep expertise when require
 
 | Category | Packages | Total Skills |
 |----------|----------|--------------|
-| AI Design Tools — MCP | 3 | 168 |
-| Frontend Frameworks | 7 | 66 |
+| AI Design Tools — MCP | 3 | 170 |
+| Frontend Frameworks | 7 | 67 |
 | Frontend UI Libraries | 4 | 13 |
 | Build & Tooling | 3 | 26 |
 | Charts & ASCII Art | 2 | 15 |
 | Backend Frameworks | 9 | 184 |
 | Cross-Platform & Desktop | 4 | 59 |
 | 3D & Game | 2 | 19 |
-| Architecture & Design Patterns | 6 | 56 |
+| Architecture & Design Patterns | 6 | 59 |
 | Embedded & Firmware | 1 | 20 |
 | Database & Storage | 1 | 5 |
-| DevOps & Containers | 3 | 32 |
+| DevOps & Containers | 4 | 40 |
 | Testing | 1 | 10 |
-| Spec-Driven Dev | 2 | 28 |
+| Spec-Driven Development | 2 | 28 |
 | Code Quality & Governance | 2 | 73 |
-| **Total** | **50** | **777** |
+| **Total** | **51** | **788** |
 
 > 💡 `boss-skills` is an old mixed-in personal scratch directory (no `skills/` subfolder, just loose scripts). It is **not** counted as a skill package.
 
@@ -267,6 +302,7 @@ Or manually copy skills to your project:
 
 ```bash
 git clone https://github.com/full-stack-skills/<skill-name>.git
+mkdir -p .claude/skills
 cp -r <skill-name>/skills/* .claude/skills/
 ```
 

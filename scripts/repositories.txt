@@ -1,3 +1,4 @@
+1panel-skills
 agent-skills
 angular-skills
 antd-skills

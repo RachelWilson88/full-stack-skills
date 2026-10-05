@@ -2,7 +2,7 @@
 
 # Full Stack Skills
 
-**777 个 Agent Skills。50 个技能包。一个统一生态。**
+**788 个 Agent Skills。51 个技能包。一个统一生态。**
 
 *前端 · 后端 · 移动端 · DevOps · AI 设计工具 — 生产级品质，独立安装。*
 
@@ -12,38 +12,71 @@
 
 [English](./README.en.md)
 
-[简介](#-简介) ·
-[安装](#-安装) ·
-[技能目录](#-技能目录) ·
-[架构](#-架构) ·
-[Claude Code 用户](#-claude-code-用户) ·
-[生态](#-生态) ·
-[贡献](#-贡献指南)
+[简介](#简介) ·
+[安装](#安装) ·
+[技能目录](#技能目录) ·
+[架构](#架构) ·
+[Claude Code 用户](#claude-code-用户) ·
+[生态](#生态) ·
+[贡献](#贡献指南)
 
 </div>
+
+<!-- ecosystem-navigation:start -->
+
+## 生态导航
+
+按当前任务选择入口：技能提供可复用的知识与操作指引，插件连接工具与工作流。各项目可以独立使用，按需安装即可。
+
+| 方向 | 适用任务 | 目录与安装 | 组织 |
+| --- | --- | --- | --- |
+| Full Stack Skills | 软件开发、架构设计、测试与运维 | [PartMe.AI / full-stack-skills](https://github.com/partme-ai/full-stack-skills) | [full-stack-skills](https://github.com/full-stack-skills) |
+| Full AIGC Skills | 图像、视频、音频等内容创作 | [PartMe.AI / full-aigc-skills](https://github.com/partme-ai/full-aigc-skills) | [full-aigc-skills](https://github.com/full-aigc-skills) |
+| Full Stack Plugins | 研发与运维的工具集成和工作流 | [PartMe.AI / full-stack-plugins](https://github.com/partme-ai/full-stack-plugins) | [full-stack-plugins](https://github.com/full-stack-plugins) |
+| Full AIGC Plugins | 内容制作的工具集成和生成工作流 | [PartMe.AI / full-aigc-plugins](https://github.com/partme-ai/full-aigc-plugins) | [full-aigc-plugins](https://github.com/full-aigc-plugins) |
+
+<!-- ecosystem-navigation:end -->
+
 
 ---
 
 ## 简介
 
-**Full Stack Skills** 是面向 AI 编码智能体的最全面 Agent Skills 集合的导航站。原为 460+ stars 的 monorepo，现已拆分为 [full-stack-skills](https://github.com/full-stack-skills) GitHub 组织下的 **50 个可独立安装的包**。
+> 统计日期：2026-10-06。按目录内各包 GitHub `main` 的 `skills/*/SKILL.md` 计数，共 51 个包、788 个技能条目（不按同名技能去重）。社区推荐不计入总数；`skills-toolchain`、`teaching-skills`、`social-skills` 延续原有目录范围，暂不收录。详见[来源快照](docs/catalog-inventory.json)与[技能索引](SKILLS_INDEX.md)。
+
+**Full Stack Skills** 是面向 AI 编码智能体的最全面 Agent Skills 集合的导航站。原为 460+ stars 的 monorepo，现已拆分为 [full-stack-skills](https://github.com/full-stack-skills) GitHub 组织下的 **51 个可独立安装的包**。
 
 每个包提供专业知识、工作流和参考资料，AI 智能体按需加载 — 保持上下文占用最小化，同时在需要时提供深度领域专业知识。
 
-> **迁移完成（2026 年 6 月）**：当前 777 个技能均位于独立仓库。本仓库现在是目录和导航站。所有现有 stars 和历史记录均保留在此。
+> **迁移完成（2026 年 6 月）**：当前 788 个技能均位于独立仓库。本仓库现在是目录和导航站。所有现有 stars 和历史记录均保留在此。
 
 ### 我们要解决的问题
 
 | 缺口 | 问题 | 解决方案 |
 |------|------|----------|
 | **上下文溢出** | 一次加载所有技能会超过 token 限制 | 通过 `npx skills add` 按包按需加载 |
-| **领域专业知识** | 通用 AI 缺乏深度框架知识 | 跨 15 个领域的 777 个专业技能 |
+| **领域专业知识** | 通用 AI 缺乏深度框架知识 | 跨 15 个领域的 788 个专业技能 |
 | **可发现性** | 技能分散在各个仓库，难以查找 | 本目录 — 一个 README，所有包链接 |
 | **版本锁定** | monorepo 强制协调发布 | 每个包独立版本管理和发布 |
 
 ---
 
 ## 安装
+
+先在项目目录打开终端，确认已安装 Node.js / npm。本仓库是导航目录；请从下方独立技能包仓库安装，CLI 会交互选择技能和宿主。
+
+```bash
+# 先查看包内技能，不安装
+npx skills add full-stack-skills/vue-skills --list
+
+# 为当前项目的 Codex 安装一个技能
+npx skills add full-stack-skills/vue-skills --skill vue3 --agent codex
+
+# 如需用户级安装，再加 --global；不加则按项目安装
+# npx skills add full-stack-skills/vue-skills --skill vue3 --agent codex --global
+```
+
+安装后可用 `npx skills list` 查看已安装技能。更多说明见[快速开始](QUICKSTART.md)、[宿主兼容性](PLATFORM_GUIDE.md)和 [Skills CLI 官方文档](https://github.com/vercel-labs/skills)。
 
 一条命令安装任意技能包：
 
@@ -71,7 +104,7 @@ npx skills add full-stack-skills/vue-skills --skill vue3
 |---|:------:|:------:|------|
 | [baoyu-skills](https://github.com/JimLiu/baoyu-skills) | 21.4k | 21 | `npx skills add JimLiu/baoyu-skills` |
 
-### AI 设计工具 — MCP（168 个技能）
+### AI 设计工具 — MCP（170 个技能）
 
 | 包 | 技能数 | 安装 |
 |---|--------|------|
@@ -79,7 +112,7 @@ npx skills add full-stack-skills/vue-skills --skill vue3
 | [pencil-skills](https://github.com/full-stack-skills/pencil-skills) | 28 | `npx skills add full-stack-skills/pencil-skills` |
 | [t2ui-skills](https://github.com/full-stack-skills/t2ui-skills) | 97 | `npx skills add full-stack-skills/t2ui-skills` |
 
-### 前端框架（66 个技能）
+### 前端框架（67 个技能）
 
 | 包 | 技能数 | 安装 |
 |---|--------|------|
@@ -89,7 +122,7 @@ npx skills add full-stack-skills/vue-skills --skill vue3
 | [svelte-skills](https://github.com/full-stack-skills/svelte-skills) | 16 | `npx skills add full-stack-skills/svelte-skills` |
 | [uniapp-skills](https://github.com/full-stack-skills/uniapp-skills) | 13 | `npx skills add full-stack-skills/uniapp-skills` |
 | [swift-skills](https://github.com/full-stack-skills/swift-skills) | 7 | `npx skills add full-stack-skills/swift-skills` |
-| [agent-skills](https://github.com/full-stack-skills/agent-skills) | 15 | `npx skills add full-stack-skills/agent-skills` |
+| [agent-skills](https://github.com/full-stack-skills/agent-skills) | 16 | `npx skills add full-stack-skills/agent-skills` |
 | [pixijs-skills](https://github.com/pixijs/pixijs-skills) | 1 | `npx skills add pixijs/pixijs-skills` |
 
 ### 前端 UI 库（13 个技能）
@@ -146,12 +179,12 @@ npx skills add full-stack-skills/vue-skills --skill vue3
 | [threejs-skills](https://github.com/full-stack-skills/threejs-skills) | 18 | `npx skills add full-stack-skills/threejs-skills` |
 | [cocos-skills](https://github.com/full-stack-skills/cocos-skills) | 1 | `npx skills add full-stack-skills/cocos-skills` |
 
-### 架构与设计模式（56 个技能）
+### 架构与设计模式（59 个技能）
 
 | 包 | 技能数 | 安装 |
 |---|--------|------|
 | [ddd-skills](https://github.com/full-stack-skills/ddd-skills) | 16 | `npx skills add full-stack-skills/ddd-skills` |
-| [design-skills](https://github.com/full-stack-skills/design-skills) | 16 | `npx skills add full-stack-skills/design-skills` |
+| [design-skills](https://github.com/full-stack-skills/design-skills) | 18 | `npx skills add full-stack-skills/design-skills` |
 | [drawio-skills](https://github.com/full-stack-skills/drawio-skills) | 2 | `npx skills add full-stack-skills/drawio-skills` |
 | [document-skills](https://github.com/full-stack-skills/document-skills) | 11 | `npx skills add full-stack-skills/document-skills` |
 | [processon-skills](https://github.com/full-stack-skills/processon-skills) | 7 | `npx skills add full-stack-skills/processon-skills` |
@@ -169,13 +202,14 @@ npx skills add full-stack-skills/vue-skills --skill vue3
 |---|--------|------|
 | [database-skills](https://github.com/full-stack-skills/database-skills) | 5 | `npx skills add full-stack-skills/database-skills` |
 
-### DevOps 与容器（32 个技能）
+### DevOps 与容器（40 个技能）
 
 | 包 | 技能数 | 安装 |
 |---|--------|------|
 | [devops-skills](https://github.com/full-stack-skills/devops-skills) | 10 | `npx skills add full-stack-skills/devops-skills` |
 | [docker-skills](https://github.com/full-stack-skills/docker-skills) | 16 | `npx skills add full-stack-skills/docker-skills` |
 | [bt-linux-panel-skills](https://github.com/full-stack-skills/bt-linux-panel-skills) | 6 | `npx skills add full-stack-skills/bt-linux-panel-skills` |
+| [1panel-skills](https://github.com/full-stack-skills/1panel-skills) | 8 | `npx skills add full-stack-skills/1panel-skills` |
 
 ### 测试（10 个技能）
 
@@ -212,6 +246,7 @@ CodeReview 的五个增强技能不包含 [Alibaba OCR 官方两个技能](https
 ├── skills/
 │   ├── <skill-name>/
 │   │   ├── SKILL.md          # 必需 — AI 智能体按需加载
+│   │   ├── agents/openai.yaml # Codex 展示配置 / Codex UI metadata
 │   │   ├── examples/         # 可选 — 使用示例
 │   │   ├── references/       # 可选 — 详细参考文档
 │   │   └── scripts/          # 可选 — 可执行脚本
@@ -233,22 +268,22 @@ CodeReview 的五个增强技能不包含 [Alibaba OCR 官方两个技能](https
 
 | 分类 | 包数 | 技能总数 |
 |------|------|----------|
-| AI 设计工具 — MCP | 3 | 168 |
-| 前端框架 | 7 | 66 |
+| AI 设计工具 — MCP | 3 | 170 |
+| 前端框架 | 7 | 67 |
 | 前端 UI 库 | 4 | 13 |
 | 构建与工具 | 3 | 26 |
 | 图表与 ASCII 艺术 | 2 | 15 |
 | 后端框架 | 9 | 184 |
 | 跨平台与桌面 | 4 | 59 |
 | 3D 与游戏 | 2 | 19 |
-| 架构与设计模式 | 6 | 56 |
+| 架构与设计模式 | 6 | 59 |
 | 嵌入式与固件 | 1 | 20 |
 | 数据库与存储 | 1 | 5 |
-| DevOps 与容器 | 3 | 32 |
+| DevOps 与容器 | 4 | 40 |
 | 测试 | 1 | 10 |
 | 规范驱动开发 | 2 | 28 |
 | 代码质量与治理 | 2 | 73 |
-| **总计** | **50** | **777** |
+| **总计** | **51** | **788** |
 
 > 💡 `boss-skills` 是混入的个人草稿（仅散落脚本，无 `skills/` 子目录），未计入正式技能包。
 
@@ -268,6 +303,7 @@ npx skills add full-stack-skills/threejs-skills  # 18 个 Three.js 技能
 
 ```bash
 git clone https://github.com/full-stack-skills/<skill-name>.git
+mkdir -p .claude/skills
 cp -r <skill-name>/skills/* .claude/skills/
 ```
 

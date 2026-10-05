@@ -172,7 +172,7 @@ Apache-2.0. No upstream source code is copied.
 
 ## 4. Package inventory
 
-53 packages, 780 skills (counted by `find <pkg>/skills -maxdepth 2 -name SKILL.md` on 2026-09-24). The `boss-skills` directory is excluded because it is an old mixed-in personal scratch dir with no `skills/` subfolder. The README catalog additionally excludes `skills-toolchain`, `teaching-skills` and `social-skills` (decision 2026-09-24), so the catalog advertises 50 packages / 774 skills while this inventory still covers all 53 repositories for licensing purposes. Each is an independent repository under the `full-stack-skills` GitHub organization.
+53 packages, 780 skills (counted by `find <pkg>/skills -maxdepth 2 -name SKILL.md` on 2026-09-24). The `boss-skills` directory is excluded because it is an old mixed-in personal scratch dir with no `skills/` subfolder. The README catalog additionally excludes `skills-toolchain`, `teaching-skills` and `social-skills` (decision 2026-09-24), so at that date the catalog covered 50 packages / 774 skills. This dated licensing snapshot covers those 53 repositories; the current catalog (51 packages / 788 skill entries, checked 2026-10-06) is recorded in [catalog-inventory.json](docs/catalog-inventory.json). The newly listed [1panel-skills](https://github.com/full-stack-skills/1panel-skills) documents its own source and licensing boundaries in its README. Each is an independent repository under the `full-stack-skills` GitHub organization.
 
 | Package | Skills | License | Repo |
 |---|---:|---|---|
