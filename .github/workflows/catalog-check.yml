@@ -5,6 +5,8 @@ on:
     paths:
       - "README.md"
       - "README.en.md"
+      - "SKILLS_INDEX.md"
+      - "docs/catalog-inventory.json"
       - "scripts/repositories.txt"
       - "scripts/validate_catalog.py"
       - ".github/workflows/catalog-check.yml"
@@ -13,6 +15,8 @@ on:
     paths:
       - "README.md"
       - "README.en.md"
+      - "SKILLS_INDEX.md"
+      - "docs/catalog-inventory.json"
       - "scripts/repositories.txt"
       - "scripts/validate_catalog.py"
       - ".github/workflows/catalog-check.yml"
