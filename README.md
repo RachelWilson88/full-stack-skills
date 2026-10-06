@@ -13,11 +13,11 @@
 [English](./README.en.md)
 
 [简介](#简介) ·
+[生态](#生态) ·
 [安装](#安装) ·
 [技能目录](#技能目录) ·
 [架构](#架构) ·
 [Claude Code 用户](#claude-code-用户) ·
-[生态](#生态) ·
 [贡献](#贡献指南)
 
 </div>
@@ -42,6 +42,33 @@
 | **领域专业知识** | 通用 AI 缺乏深度框架知识 | 跨 15 个领域的 788 个专业技能 |
 | **可发现性** | 技能分散在各个仓库，难以查找 | 本目录 — 一个 README，所有包链接 |
 | **版本锁定** | monorepo 强制协调发布 | 每个包独立版本管理和发布 |
+
+---
+
+## 生态
+
+<!-- ecosystem-navigation:start -->
+
+| 方向 | 适用任务 | 目录与安装 | 组织 |
+| --- | --- | --- | --- |
+| Full Stack Skills | 软件开发、架构设计、测试与运维 | [PartMe.AI / full-stack-skills](https://github.com/partme-ai/full-stack-skills) | [full-stack-skills](https://github.com/full-stack-skills) |
+| Full AIGC Skills | 图像、视频、音频等内容创作 | [PartMe.AI / full-aigc-skills](https://github.com/partme-ai/full-aigc-skills) | [full-aigc-skills](https://github.com/full-aigc-skills) |
+| Full Stack Plugins | 研发与运维的工具集成和工作流 | [PartMe.AI / full-stack-plugins](https://github.com/partme-ai/full-stack-plugins) | [full-stack-plugins](https://github.com/full-stack-plugins) |
+| Full AIGC Plugins | 内容制作的工具集成和生成工作流 | [PartMe.AI / full-aigc-plugins](https://github.com/partme-ai/full-aigc-plugins) | [full-aigc-plugins](https://github.com/full-aigc-plugins) |
+
+<!-- ecosystem-navigation:end -->
+
+### 相关资源
+
+| 资源 | 链接 |
+|------|------|
+| **Agent Skills 规范** | [agentskills.io](https://agentskills.io) |
+| **Skills CLI** | [github.com/vercel-labs/skills](https://github.com/vercel-labs/skills) |
+| **Skills 目录** | [skills.sh](https://skills.sh) |
+| **PartMe.AI** | [github.com/partme-ai](https://github.com/partme-ai) |
+| **Addy Osmani's Agent Skills** | [github.com/addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) |
+| **Browserbase Skills** | [github.com/browserbase/skills](https://github.com/browserbase/skills) |
+| **Google Skills** | [github.com/google/skills](https://github.com/google/skills) |
 
 ---
 
@@ -290,33 +317,6 @@ git clone https://github.com/full-stack-skills/<skill-name>.git
 mkdir -p .claude/skills
 cp -r <skill-name>/skills/* .claude/skills/
 ```
-
----
-
-## 生态
-
-<!-- ecosystem-navigation:start -->
-
-| 方向 | 适用任务 | 目录与安装 | 组织 |
-| --- | --- | --- | --- |
-| Full Stack Skills | 软件开发、架构设计、测试与运维 | [PartMe.AI / full-stack-skills](https://github.com/partme-ai/full-stack-skills) | [full-stack-skills](https://github.com/full-stack-skills) |
-| Full AIGC Skills | 图像、视频、音频等内容创作 | [PartMe.AI / full-aigc-skills](https://github.com/partme-ai/full-aigc-skills) | [full-aigc-skills](https://github.com/full-aigc-skills) |
-| Full Stack Plugins | 研发与运维的工具集成和工作流 | [PartMe.AI / full-stack-plugins](https://github.com/partme-ai/full-stack-plugins) | [full-stack-plugins](https://github.com/full-stack-plugins) |
-| Full AIGC Plugins | 内容制作的工具集成和生成工作流 | [PartMe.AI / full-aigc-plugins](https://github.com/partme-ai/full-aigc-plugins) | [full-aigc-plugins](https://github.com/full-aigc-plugins) |
-
-<!-- ecosystem-navigation:end -->
-
-### 相关资源
-
-| 资源 | 链接 |
-|------|------|
-| **Agent Skills 规范** | [agentskills.io](https://agentskills.io) |
-| **Skills CLI** | [github.com/vercel-labs/skills](https://github.com/vercel-labs/skills) |
-| **Skills 目录** | [skills.sh](https://skills.sh) |
-| **PartMe.AI** | [github.com/partme-ai](https://github.com/partme-ai) |
-| **Addy Osmani's Agent Skills** | [github.com/addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) |
-| **Browserbase Skills** | [github.com/browserbase/skills](https://github.com/browserbase/skills) |
-| **Google Skills** | [github.com/google/skills](https://github.com/google/skills) |
 
 ---
 
